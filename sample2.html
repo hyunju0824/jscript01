@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ 
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>2-이미지를 사라지게 하는 버튼</h2>
+
+    <p>
+        <input type="button" value="이미지숨기기" onclick="hide();">
+        <input type="button" value="이미지보이기" onclick="hi();">
+    </p>
+    <div class="season" id="season3">
+        <img src="images/가을.jpg" alt="">
+    </div>
+
+   
+
+    <script>
+        function hide() {
+            document.getElementById("season3").style.display='none';
+        }
+
+        function hi() {
+            document.getElementById("season3").style.display='block';
+        }
+        
+    </script>
+</body>
+</html>
