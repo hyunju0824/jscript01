@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>암호를 입력받아서 체크</h2>
+    <input type="button" value="암호를 입력하면 클릭" onclick="checkpw()">
+    <p>암호가 맞으면 메인화면으로 이동가능합니다.</p>
+
+
+
+    <script>
+        function checkpw(){
+            /* alert("test"); 알람을 출력하는 기본함수*/
+            //입력하는 창을 띄우는 함수
+           passwd=prompt("비밀번호입력",''); //큰따옴표, 작은따옴표 다 가능
+            //변수선언, 연산자, 비교, 반복, 기본함수, 배열 => 기본문법
+           
+            //비교하기
+            if(passwd=='js123'){
+                alert('암호가 맞습니다');
+                location.href='main.html' //암호가 맞을 시 알림창 띄우고 메인페이지로 이동
+            }else{
+                alert("암호를 다시 확인하시오")
+            } 
+        }
+    </script>
+</body>
+</html>

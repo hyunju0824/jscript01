@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h2>아이디검색</h2>
+    <input type="button" value="아이디검색" onclick="searchid()">
+    <p>김건우씨의 아이디: kwkim, 같은값 검색시 '아이디가 존재합니다', 다르면 '존재하지 않습니다'
+        출력
+    </p>
+    <script>
+        function searchid(){
+ 
+            id=prompt("아이디검색",''); 
+        
+            if(id=='kwkim'){
+                alert('아이디가 존재합니다');
+            }else{
+                alert("아이디가 존재하지 않습니다")
+            } 
+        }
+        
+    </script>
+</body>
+</html>
